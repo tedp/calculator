@@ -1,0 +1,371 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`calculator calculateState should clear displayed value after the caclulator has been resulted when number input 1`] = `
+Object {
+  "calcState": "input",
+  "displayState": "numeric",
+  "result": Object {
+    "display": "1",
+    "displayStates": Array [
+      "numeric",
+    ],
+    "keyTypes": Array [
+      "numeric",
+    ],
+  },
+}
+`;
+
+exports[`calculator calculateState should clear one character from the right 1`] = `
+Object {
+  "calcState": "input",
+  "displayState": "operator",
+  "result": Object {
+    "display": "1+",
+    "displayStates": Array [
+      "numeric",
+      "operator",
+    ],
+    "keyTypes": Array [
+      "numeric",
+      "operator",
+    ],
+  },
+}
+`;
+
+exports[`calculator calculateState should concat decimal if display is \`1+1\` 1`] = `
+Object {
+  "calcState": "input",
+  "displayState": "dot",
+  "result": Object {
+    "display": "1+1.",
+    "displayStates": Array [
+      "numeric",
+      "operator",
+      "numeric",
+      "dot",
+    ],
+    "keyTypes": Array [
+      "numeric",
+      "operator",
+      "numeric",
+      "dot",
+    ],
+  },
+}
+`;
+
+exports[`calculator calculateState should concat numeric if current display is \`1+1+\` 1`] = `
+Object {
+  "calcState": "input",
+  "displayState": "operator",
+  "result": Object {
+    "display": "1+1+1",
+    "displayStates": Array [
+      "numeric",
+      "operator",
+      "numeric",
+      "operator",
+    ],
+    "keyTypes": Array [
+      "numeric",
+      "operator",
+      "numeric",
+      "operator",
+    ],
+  },
+}
+`;
+
+exports[`calculator calculateState should concat numeric if current display is \`1+1\` 1`] = `
+Object {
+  "calcState": "input",
+  "displayState": "numeric",
+  "result": Object {
+    "display": "1+11",
+    "displayStates": Array [
+      "numeric",
+      "operator",
+      "numeric",
+      "numeric",
+    ],
+    "keyTypes": Array [
+      "numeric",
+      "operator",
+      "numeric",
+      "numeric",
+    ],
+  },
+}
+`;
+
+exports[`calculator calculateState should concat numeric if display is \`1+1.\` 1`] = `
+Object {
+  "calcState": "input",
+  "displayState": "dot",
+  "result": Object {
+    "display": "1+1.1",
+    "displayStates": Array [
+      "numeric",
+      "operator",
+      "numeric",
+      "dot",
+    ],
+    "keyTypes": Array [
+      "numeric",
+      "operator",
+      "numeric",
+      "dot",
+    ],
+  },
+}
+`;
+
+exports[`calculator calculateState should concat numeric if display is \`1+1.1\` 1`] = `
+Object {
+  "calcState": "input",
+  "displayState": "decimal",
+  "result": Object {
+    "display": "1+1.11",
+    "displayStates": Array [
+      "numeric",
+      "operator",
+      "numeric",
+      "dot",
+      "decimal",
+    ],
+    "keyTypes": Array [
+      "numeric",
+      "operator",
+      "numeric",
+      "dot",
+      "numeric",
+    ],
+  },
+}
+`;
+
+exports[`calculator calculateState should concat operator if current display is \`1+1\` 1`] = `
+Object {
+  "calcState": "input",
+  "displayState": "operator",
+  "result": Object {
+    "display": "1+1+",
+    "displayStates": Array [
+      "numeric",
+      "operator",
+      "numeric",
+      "operator",
+    ],
+    "keyTypes": Array [
+      "numeric",
+      "operator",
+      "numeric",
+      "operator",
+    ],
+  },
+}
+`;
+
+exports[`calculator calculateState should concat operator if display is \`1+1.1\` 1`] = `
+Object {
+  "calcState": "input",
+  "displayState": "decimal",
+  "result": Object {
+    "display": "1+1.1+",
+    "displayStates": Array [
+      "numeric",
+      "operator",
+      "numeric",
+      "dot",
+      "decimal",
+    ],
+    "keyTypes": Array [
+      "numeric",
+      "operator",
+      "numeric",
+      "dot",
+      "numeric",
+    ],
+  },
+}
+`;
+
+exports[`calculator calculateState should concat operators after the caclulator has been resulted 1`] = `
+Object {
+  "calcState": "input",
+  "displayState": "operator",
+  "result": Object {
+    "display": "2+",
+    "displayStates": Array [
+      "numeric",
+      "operator",
+    ],
+    "keyTypes": Array [
+      "numeric",
+      "operator",
+    ],
+  },
+}
+`;
+
+exports[`calculator calculateState should not concat decimal if display is \`1+1+\` 1`] = `
+Object {
+  "calcState": "input",
+  "displayState": "operator",
+  "result": Object {
+    "display": "1+1+",
+    "displayStates": Array [
+      "numeric",
+      "operator",
+      "numeric",
+      "operator",
+    ],
+    "keyTypes": Array [
+      "numeric",
+      "operator",
+      "numeric",
+      "operator",
+    ],
+  },
+}
+`;
+
+exports[`calculator calculateState should not concat decimal if display is \`1+1.\` 1`] = `
+Object {
+  "calcState": "input",
+  "displayState": "dot",
+  "result": Object {
+    "display": "1+1.",
+    "displayStates": Array [
+      "numeric",
+      "operator",
+      "numeric",
+      "dot",
+    ],
+    "keyTypes": Array [
+      "numeric",
+      "operator",
+      "numeric",
+      "dot",
+    ],
+  },
+}
+`;
+
+exports[`calculator calculateState should not concat decimal if display is \`1+1.1\` 1`] = `
+Object {
+  "calcState": "input",
+  "displayState": "decimal",
+  "result": Object {
+    "display": "1+1.1",
+    "displayStates": Array [
+      "numeric",
+      "operator",
+      "numeric",
+      "dot",
+      "decimal",
+    ],
+    "keyTypes": Array [
+      "numeric",
+      "operator",
+      "numeric",
+      "dot",
+      "numeric",
+    ],
+  },
+}
+`;
+
+exports[`calculator calculateState should not concat numeric values after all input has been cleared 1`] = `
+Object {
+  "calcState": "input",
+  "displayState": "numeric",
+  "result": Object {
+    "display": "1",
+    "displayStates": Array [
+      "numeric",
+    ],
+    "keyTypes": Array [
+      "numeric",
+    ],
+  },
+}
+`;
+
+exports[`calculator calculateState should not concat operator if display is \`1+1+\` 1`] = `
+Object {
+  "calcState": "input",
+  "displayState": "operator",
+  "result": Object {
+    "display": "1+1+",
+    "displayStates": Array [
+      "numeric",
+      "operator",
+      "numeric",
+      "operator",
+    ],
+    "keyTypes": Array [
+      "numeric",
+      "operator",
+      "numeric",
+      "operator",
+    ],
+  },
+}
+`;
+
+exports[`calculator calculateState should not concat operator if display is \`1+1.\` 1`] = `
+Object {
+  "calcState": "input",
+  "displayState": "dot",
+  "result": Object {
+    "display": "1+1.",
+    "displayStates": Array [
+      "numeric",
+      "operator",
+      "numeric",
+      "dot",
+    ],
+    "keyTypes": Array [
+      "numeric",
+      "operator",
+      "numeric",
+      "dot",
+    ],
+  },
+}
+`;
+
+exports[`calculator calulateResultState should calculate the result 1`] = `
+Object {
+  "calcState": "resulted",
+  "displayState": "numeric",
+  "result": Object {
+    "display": 2,
+    "displayStates": Array [
+      "numeric",
+    ],
+    "keyTypes": Array [
+      "numeric",
+    ],
+  },
+}
+`;
+
+exports[`calculator calulateResultState should calculate the result applying the operators in the correct order \`/ * - +\` 1`] = `
+Object {
+  "calcState": "resulted",
+  "displayState": "numeric",
+  "result": Object {
+    "display": 0.8999999999999999,
+    "displayStates": Array [
+      "numeric",
+    ],
+    "keyTypes": Array [
+      "numeric",
+    ],
+  },
+}
+`;

@@ -1,0 +1,12 @@
+@import '../../styles/styles.scss';
+
+$module: "Calculator";
+
+.#{$module} {
+  padding: $padding * 2;
+  @include box-shadow();
+  border-radius: 1px;
+  width: $width;
+  margin: auto;
+}
+

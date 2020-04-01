@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button should render button correctly with given value 1`] = `
+<div
+  className="Button"
+  onClick={[Function]}
+>
+  value
+</div>
+`;
+
+exports[`Button should render correctly 1`] = `
+<div
+  className="Button"
+  onClick={[Function]}
+/>
+`;

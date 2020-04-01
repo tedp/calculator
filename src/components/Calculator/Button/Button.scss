@@ -1,0 +1,26 @@
+@import "../../../styles/styles.scss";
+
+
+$module: "Button";
+
+.#{$module} {
+  display: inline-block;
+  border: 1px solid $mid-grey;
+  border-radius: 5px;
+  width: $button-width;
+  text-align: center;
+  padding: $padding;
+  margin: 20px 4px 10px 0;
+  cursor: pointer;
+  background-color: $dark-grey;
+
+  &:hover {
+    background-color: $dark-grey;
+    border-color: $light-grey;
+    @include box-shadow();
+  }
+
+  &:active {
+    font-weight: bold;
+  }
+}

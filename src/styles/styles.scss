@@ -1,0 +1,26 @@
+$padding: 10px;
+$width: 500px;
+$dark-grey: #ddd;
+$mid-grey: #bbb;
+$light-grey: #aaa;
+$equals-hover-border-color: #1857bb;
+$equals-background-color: #4d90fe;
+$equals-hover-color: #307cf9;
+$ee-border-bottom-color: #196b98;
+$ee-background-color: #1795d4;
+$button-width: 17%;
+
+@mixin box-shadow($top: 0px, $left: 1px, $blur: 4px, $spread: 0px, $color: rgba(0, 0, 0, 0.2)) {
+    box-shadow: $top $left $blur $spread $color;
+}
+
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    letter-spacing: 5px;
+    font-size: 1.8rem;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+  

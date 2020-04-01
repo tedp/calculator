@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should render correctly 1`] = `
+<div
+  className="Header"
+>
+  <a
+    href="https://www.equalexperts.com/"
+    title="EE homepage"
+  >
+    <ForwardRef(SvgLogo) />
+  </a>
+</div>
+`;

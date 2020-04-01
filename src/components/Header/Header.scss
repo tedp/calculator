@@ -1,0 +1,17 @@
+@import '../../styles/styles.scss';
+
+$module: "Header";
+
+.#{$module} {
+  background-color: $ee-background-color;
+  height: 40px;
+  padding: 25px 0;
+  margin-bottom: 25px;
+  border-bottom: 10px solid $ee-border-bottom-color;
+
+  & svg {
+    margin-left: 25px;
+    height: 40px;
+  }
+}
+

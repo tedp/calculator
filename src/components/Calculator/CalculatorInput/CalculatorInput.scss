@@ -1,0 +1,57 @@
+@import "../../../styles/styles.scss";
+
+$module: "CalculatorInput";
+
+.#{$module} {
+  .top-panel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .Button {
+      border: 1px solid $mid-grey;
+
+      background-color: $dark-grey;
+      &:hover {
+        background-color: $dark-grey;
+        border-color: $light-grey;
+      }
+    }
+  }
+
+  .centre-panel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .Button {
+      border: 1px solid $dark-grey;
+      background-color: #f9f9f9;
+      &:hover {
+        background-color: #f1f1f1;
+        border-color: $mid-grey;
+      }
+    }
+  }
+
+  .bottom-panel {
+    display: flex;
+    justify-content: space-around;
+
+    .Button {
+      flex-basis: 93%;
+      background-color: $equals-background-color;
+      border: none;
+
+      &:hover {
+        background-color: $equals-hover-color;
+        @include box-shadow();
+        border-color: $equals-hover-border-color;
+      }
+
+      &:active {
+        font-weight: bold;
+      }
+    }
+  }
+}
